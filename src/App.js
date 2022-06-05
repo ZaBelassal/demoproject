@@ -9,12 +9,14 @@ import Shelf from "./components/Shelf/Shelf"
 function App() {
   return (
     <div className="App">
-      <Navbar />
-    <Routes>
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/shelf" element={<Shelf />} />
-    </Routes>
+      <div className='AppContainer'>
+        <Navbar />
+        <Routes>
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/shelf" element={<Shelf />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );

@@ -1,7 +1,13 @@
 .App{
+  background-color: #F2F0EE;
+  padding-top: 80px;
+}
+
+.AppContainer{
+  background-color: white;
   margin:auto;
   width:1500px;
-  background-color: lightgrey;
   border-radius: 10px;
   height:100%;
+  box-sizing: border-box;
 }

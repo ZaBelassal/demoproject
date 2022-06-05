@@ -2,11 +2,15 @@
     dis
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Updock&display=swap'); 
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
 .alignImg{
     display:flex;
     align-items:center;
     justify-content: space-between;
-    margin-top: 80px;
     padding-top: 40px;
     padding-left:40px;
     padding-right: 50px;
@@ -14,6 +18,16 @@
 .alignItems{
     display: inline;
 }
-.bgchange:hoever{
-    background-color:brown  
+.bgchange{
+    transition: all .2s;
+  }
+.bgchange:hover{
+    background-color: #e45447;
+    color: #f2f0ee;
+    /* box-shadow: 0 1rem 2rem rgb(43 41 41 / 40%); */
+    transform: rotate(-5deg) scale(1.1);
+    
+}
+.name{
+    font-size: 4em;
 }

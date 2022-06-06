@@ -45,14 +45,34 @@ function Navbar(){
                     </ul>
                 </div>
                 <div className="col-md-3 my-5 py-5">
-                  <div className="animate__animated animate__fadeInDownBig animationDuration">
-                    <div className='btn btn-secondary color-white fs-2'>
+                  <div className="animate__animated animate__heartBeat">
+                    <div className='btn btn-dark color-white fs-2 p-2'>
                       It's me
                     </div>
                     <div className="arrow-down"></div>
                   </div>
-                    <h2 className='my-4 name'><b>Zakaria <span className='mx-5'>Belassal</span></b></h2>
-                    <div className="animate__animated animate__fadeInDownBig">
+                    <h2 className='my-4 name'><b>
+                            <span className='animate__animated animate__zoomIn delay1'>Z</span>
+                            <span className='animate__animated animate__zoomIn delay2'>a</span>
+                            <span className='animate__animated animate__zoomIn delay3'>k</span>
+                            <span className='animate__animated animate__zoomIn delay4'>a</span>  
+                            <span className='animate__animated animate__zoomIn delay5'>r</span>  
+                            <span className='animate__animated animate__zoomIn delay6'>i</span> 
+                            <span className='animate__animated animate__zoomIn delay7'>a</span> 
+                            <br/>
+                            <span className='mx-5'>
+                              <span className='animate__animated animate__zoomIn delay8'>B</span>
+                              <span className='animate__animated animate__zoomIn delay9'>e</span>
+                              <span className='animate__animated animate__zoomIn delay10'>l</span>
+                              <span className='animate__animated animate__zoomIn delay11'>a</span>
+                              <span className='animate__animated animate__zoomIn delay12'>s</span>
+                              <span className='animate__animated animate__zoomIn delay13'>s</span>
+                              <span className='animate__animated animate__zoomIn delay14'>a</span>
+                              <span className='animate__animated animate__zoomIn delay15'>l</span>
+                              </span>
+                            </b>
+                            </h2>
+                    <div className="animate__animated animate__fadeInDownBig animationDelay">
                     Full Stack developer @me <br/>( JS React || Angular || Node.js || PHP Laravel )
                       <div> Javascript enthusiast</div> 
                       <div>Technologies Buffer Always learning</div> 

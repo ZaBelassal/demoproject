@@ -38,11 +38,70 @@
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
 
-    border-top: 20px solid #6c757d;
+    border-top: 20px solid #2b2929;
       
 }
-
-.animationDuration{
-    /* animation-duration: 5s; */
-    transition: all 500ms ease
+.bgColor{
+    background-color: #2b2929;
+    width:120px;
+    height:60px;
+    color:white;
 }
+/*My name */
+.delay1{
+    animation-delay:1000ms
+}
+.delay2{
+    animation-delay: 1100ms;
+}
+.delay3{
+    animation-delay: 1200ms;
+}
+
+.delay4{
+    animation-delay: 1300ms;
+}
+
+.delay5{
+    animation-delay: 1400ms;
+}
+
+.delay6{
+    animation-delay: 1500ms;
+}
+.delay7{
+    animation-delay: 1600ms;
+}
+
+.delay8{
+    animation-delay: 1700ms
+}
+
+.delay9{
+    animation-delay: 1800ms;
+}
+.delay10{
+    animation-delay: 1900ms;
+}
+.delay11{
+    animation-delay:2000ms
+}
+.delay12{
+    animation-delay:2100ms
+}
+.delay13{
+    animation-delay:2200ms
+}
+.delay14{
+    animation-delay:2300ms
+}
+.delay15{
+    animation-delay:2400ms
+}
+
+
+
+.animationDelay{
+    animation-delay: 3000ms;
+}
+/*My name*/

@@ -1,11 +1,36 @@
-import React from 'react'
+// import React from 'react'
+import { useState } from 'react';
 import './Navbar.css'
 import {Link , NavLink} from 'react-router-dom'
 import BusinessMan from '../../icons/businessMan.png'
 import 'animate.css';
+import { useMousePosition } from "./useMouse";
 
 function Navbar(){
-   
+
+  const position = useMousePosition();
+
+  // const [MousePosition, setMousePosition] = useState({
+  //   left: 0,
+  //   top: 0
+  //   })
+  //   const cursor = document.querySelector(".cursor")
+  //   cursor.onmousemove = function(event) {
+  //   setMousePosition({
+  //   left: event.pageX,
+  //   top: event.pageY
+  //         });
+  //     }
+    
+
+  // const handleChange = (e) => {
+  //   console.log("e", e.pageX);
+  //   setMousePosition({
+  //     left: position.x,
+  //     top: position.y
+  //   });
+  // };
+
     return (
         <div>
         <header className="alignImg">
@@ -52,7 +77,8 @@ function Navbar(){
                     <div className="arrow-down"></div>
                   </div>
                     <h2 className='my-4 name'><b>
-                            <span className='animate__animated animate__zoomIn delay1'>Z</span>
+                            <span className='letterZ animate__animated animate__zoomIn delay1'>Z</span>
+                            <div className="cursor" style={{left: position.x + "px",top: position.y + "px"}}></div>
                             <span className='animate__animated animate__zoomIn delay2'>a</span>
                             <span className='animate__animated animate__zoomIn delay3'>k</span>
                             <span className='animate__animated animate__zoomIn delay4'>a</span>  
@@ -83,6 +109,7 @@ function Navbar(){
                     <img src={BusinessMan} alt="businessMan" height="500px" width="850px" style={{position:"absolute",zIndex:2}}/> 
                 </div>
               </div>
+              <div className="cursor" style={{left: position.x + "px",top: position.y + "px"}}></div>
             </div>
         </section>
        </div>      

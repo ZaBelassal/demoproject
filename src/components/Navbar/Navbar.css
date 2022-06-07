@@ -27,6 +27,7 @@
     color: #f2f0ee;
     box-shadow: 0 1rem 2rem rgb(43 41 41 / 40%);
         transform: rotate(-30deg) !important;
+        /* cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto; */
 }
 .name{
     font-size: 4em;
@@ -105,3 +106,21 @@
     animation-delay: 3000ms;
 }
 /*My name*/
+
+.cursor {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: black;
+    transition: 0.1s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+    z-index: 99;
+  }
+  
+  .letterZ:hover ~ .cursor {
+    transform: scale(6);
+  }
+  

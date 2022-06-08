@@ -7,7 +7,7 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Resume from './components/Resume/Resume';
 import Shelf from "./components/Shelf/Shelf";
 import { ThemeContext } from './components/Theme/ThemeContext';
-import { ThemeProvider} from './components/Theme/ThemeContext'
+import  ToggleTheme  from './components/ToggleTheme/ToggleTheme'
 
 function App() {
   
@@ -15,12 +15,26 @@ function App() {
 
   console.log(themeContext)
   
+  let style = {};
+  if(themeContext.theme === 'dark'){
+    style= {
+      background:'white',
+      color:'#6c757d'
+    }
+   } else {
+      style= {
+      background:'dark',
+      color:"#ffffff"
+      }
+    }
+  
 
   return ( 
   
-    <ThemeProvider>
-    <div className="App">
-      <div className='AppContainer'>
+    
+    <div className="App" style={style}>
+      <ToggleTheme /> 
+      <div className='AppContainer' style={style}>
       <header className="alignImg">
             <div className='marginMail'>
                   <a className="bgchange text-decoration-none fs-4 p-2" href="mailto:zakariabelassal@gmail.com"><i className="fa-solid fa-envelope mx-2"></i>zakariabelassal@gmail.com</a>
@@ -43,7 +57,7 @@ function App() {
       </div>
       <Footer />
     </div>
-    </ThemeProvider>
+    
   );
 }
 

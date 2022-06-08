@@ -1,32 +1,29 @@
 import './App.css';
-import { useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home'
-import {Link , NavLink ,Routes , Route} from 'react-router-dom'
+import {Link , Routes , Route} from 'react-router-dom'
 import Portfolio from './components/Portfolio/Portfolio';
 import Resume from './components/Resume/Resume';
-import Shelf from "./components/Shelf/Shelf"
+import Shelf from "./components/Shelf/Shelf";
+import { ThemeContext } from './components/Theme/ThemeContext';
+import { ThemeProvider} from './components/Theme/ThemeContext'
 
 function App() {
-  const [mode , setMode] = useState(true)
-  return (
+  
+  const themeContext = useContext(ThemeContext);
+
+  console.log(themeContext)
+  
+
+  return ( 
+  
+    <ThemeProvider>
     <div className="App">
       <div className='AppContainer'>
       <header className="alignImg">
             <div className='marginMail'>
                   <a className="bgchange text-decoration-none fs-4 p-2" href="mailto:zakariabelassal@gmail.com"><i className="fa-solid fa-envelope mx-2"></i>zakariabelassal@gmail.com</a>
-            </div>
-            <div onClick={() => setMode(prevCheck => !prevCheck)}>
-              { mode ?
-                 (
-                <i className="fa-solid fa-sun fs-4"></i>
-                )
-                :
-                (
-                <i className="fa-solid fa-moon fs-4"></i>
-                )
-
-              }
             </div>
             <div>
               <Link className="bgchange text-decoration-none mx-2 fs-4 p-2" to="/portfolio"><i className="fa-solid fa-file mx-2"></i> Works</Link>
@@ -38,7 +35,7 @@ function App() {
 
      
         <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/shelf" element={<Shelf />} />
@@ -46,6 +43,7 @@ function App() {
       </div>
       <Footer />
     </div>
+    </ThemeProvider>
   );
 }
 

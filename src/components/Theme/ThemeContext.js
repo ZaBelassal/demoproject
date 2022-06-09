@@ -3,10 +3,10 @@ import React, { useContext,useState  } from 'react'
 export const ThemeContext = React.createContext() ;
 
 export function ThemeProvider(Props){
-    const [theme, setTheme] = useState('dark');
+    const [theme, setTheme] = useState('black');
 
     function toggleTheme(){
-        setTheme(theme === 'dark' ? 'light' : 'dark');
+        setTheme(theme === 'black' ? 'white' : 'black');
     }
 
     return (

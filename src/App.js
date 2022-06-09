@@ -16,29 +16,57 @@ function App() {
   console.log(themeContext)
   
   let style = {};
-  if(themeContext.theme === 'dark'){
+  let style1 = {};
+  if(themeContext.theme === 'black'){
     style= {
       background:'white',
       color:'#6c757d'
     }
+    style1={
+      background:'f2f0ee'
+    }
    } else {
       style= {
-      background:'dark',
+      background:'black',
       color:"#ffffff"
       }
+      style1={
+        background:'#111111'
+      }
     }
-  
+    
+    if(themeContext.theme === 'white'){
+      style= {
+        background:'black',
+        color:'#ffffff'
+      }
+      style1={
+        background:'#111111'
+      }
+     } else {
+        style= {
+        background:'white',
+        color:"#6c757d"
+        }
+        style1={
+          background:'#f2f0ee'
+        }
+      }
+    
+   
 
   return ( 
   
     
-    <div className="App" style={style}>
-      <ToggleTheme /> 
+    <div className="App" style={style1}>
+      
       <div className='AppContainer' style={style}>
       <header className="alignImg">
             <div className='marginMail'>
                   <a className="bgchange text-decoration-none fs-4 p-2" href="mailto:zakariabelassal@gmail.com"><i className="fa-solid fa-envelope mx-2"></i>zakariabelassal@gmail.com</a>
+                  
             </div>
+            <ToggleTheme /> 
             <div>
               <Link className="bgchange text-decoration-none mx-2 fs-4 p-2" to="/portfolio"><i className="fa-solid fa-file mx-2"></i> Works</Link>
               <Link className="bgchange text-decoration-none mx-2 fs-4 p-2" to="/resume"><i className="fa-solid fa-user-tie mx-2"></i>Resume</Link>

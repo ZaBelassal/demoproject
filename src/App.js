@@ -67,7 +67,7 @@ function App() {
 
   return loader ? (
 
-    <ClimbingBoxLoader size={30} color={'#E45447'} loader={loader} />
+    <ClimbingBoxLoader size={30} color={'#E45447'} loader={loader}/>
   ) 
     : (
     <div className="App" style={style1}>

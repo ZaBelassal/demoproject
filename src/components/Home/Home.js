@@ -101,6 +101,10 @@ function Home(){
               <div className="cursor overflow-hidden" style={{left: position.x + "px",top: position.y + "px"}}></div>
             </div>
         </section>
+        <section className='container'>
+
+        <h2 className="fs-2"> What I can do ?</h2>
+        </section>
        </div>      
     )
   }

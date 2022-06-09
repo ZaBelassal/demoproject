@@ -1,19 +1,29 @@
 import './App.css';
-import { createContext, useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+// import Loader from './components/Loader/Loader';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home'
-import {Link , Routes , Route} from 'react-router-dom'
+import Shelf from "./components/Shelf/Shelf";
 import Portfolio from './components/Portfolio/Portfolio';
 import Resume from './components/Resume/Resume';
-import Shelf from "./components/Shelf/Shelf";
+import {Link , Routes , Route} from 'react-router-dom'
 import { ThemeContext } from './components/Theme/ThemeContext';
 import  ToggleTheme  from './components/ToggleTheme/ToggleTheme'
+import { ClimbingBoxLoader } from 'react-spinners';
+
 
 function App() {
   
   const themeContext = useContext(ThemeContext);
 
-  console.log(themeContext)
+  const [loader , setLoader] = useState(false)
+
+  useEffect(()=>{
+    setLoader(true)
+    setTimeout(()=>{
+      setLoader(false)
+    },3000)
+  },[])
   
   let style = {};
   let style1 = {};
@@ -55,9 +65,11 @@ function App() {
     
    
 
-  return ( 
-  
-    
+  return loader ? (
+
+    <ClimbingBoxLoader size={30} color={'#E45447'} loader={loader} />
+  ) 
+    : (
     <div className="App" style={style1}>
       
       <div className='AppContainer' style={style}>
@@ -85,8 +97,9 @@ function App() {
       </div>
       <Footer />
     </div>
-    
+  
   );
+  
 }
 
 export default App;

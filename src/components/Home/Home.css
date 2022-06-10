@@ -75,8 +75,25 @@
 .animationDelay{
     animation-delay: 3000ms;
 }
+.talk{
+    background: #e45447;
+    animation-delay:4000ms;
+    text-align: center;
+    margin-left:270px;
+    border-radius:50%;
+    width:80px !important;
+    height: 80px !important;
+    transition-property: transform;
+    transition-duration: 4s;
+    transition-delay: 2s;
+   
+}
+.talk:hover{
+    
+    transform:scale(2);
+    cursor:pointer
 /*My name*/
-
+}
 .cursor {
     position: relative;
     width: 100px;
@@ -93,4 +110,75 @@
   .letterZ:hover ~ .cursor {
     transform: scale(6);
   }
-  
+  .round{
+    border-radius:50%;
+    background-color: #e45447;
+    height:15px;
+    width:15px;
+  }
+  .rounded-line{
+      height: 4px;
+      width:180px;
+      background-color:#e45447;
+  }
+  .services-details{
+      background-color: #f2f0ee;
+      /* margin-left:200px; */
+  }
+
+.desktop{
+    top:150px;
+}
+.desktopScreen{
+    top: -70px;
+}
+.desktopTable{
+    top:140px;
+}
+.dashboard1{
+ top:-130px;
+ left:-130px;
+ z-index: 2;
+}
+.dashboard2{
+    top:-100px ;
+    right:-60px;
+    z-index: 2;
+}
+
+.dashboard3{
+    top:-10px;
+    left:-130px;
+    z-index: 2; 
+}
+
+.dashboard4{
+    top:-10px;
+    right:-60px;
+    z-index: 2;
+}
+
+.seeworkButton{
+    background-color: #e45447;
+    opacity:0.2;
+    transition-property: transform;
+    border-radius: 50%;
+    height:80px;
+    width:80px;
+    left:20px;
+}
+.seeworkTitle{
+    left:50px;
+    top:20px;
+}
+.seeworkContainer{
+    transition-property:all;
+    
+}
+
+.seeworkContainer:hover{
+    background-color: #e45447;
+    width:200px;
+    height:80px;
+    border-radius:25%;
+}

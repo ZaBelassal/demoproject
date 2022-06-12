@@ -158,27 +158,93 @@
     z-index: 2;
 }
 
-.seeworkButton{
+.seeworkTitle{
+    
+    top:25px;
+    width:200px;
+    font-size:20px;
+}
+.seeworkContainer{
+    margin-left:20px;
     background-color: #e45447;
-    opacity:0.2;
-    transition-property: transform;
+    color:#2b2929;
     border-radius: 50%;
     height:80px;
     width:80px;
-    left:20px;
-}
-.seeworkTitle{
+    text-align:center;
     left:50px;
-    top:20px;
-}
-.seeworkContainer{
     transition-property:all;
-    
+    transition-duration: 0.4s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-out;
 }
 
 .seeworkContainer:hover{
     background-color: #e45447;
     width:200px;
     height:80px;
-    border-radius:25%;
+    border-radius:40px;
+    color:white;
+    cursor: pointer
+}
+
+
+/*About Me*/
+
+.aboutme{
+    background-color:#F2F0EE;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.roundedImg{
+    border-radius: 8px;
+}
+
+/*My works */
+
+.myworks{
+    margin-left: 100px;
+}
+
+.videoContainer{
+    position:relative;
+}
+.video1{
+    border-radius: 20px;
+    position:relative;
+}
+
+.ltr-effect, .ltr-effect1{
+    position:relative
+}
+
+.ltr-effect:after,.ltr-effect1:after{
+    position:absolute;
+    content: "";
+    height:0;
+    
+    right:0;
+    bottom:0;
+    left:0;
+    background-color: #e45447;
+    transition:all 0.5s ease-in-out;
+    border-bottom-right-radius:20px ;
+    border-bottom-left-radius:20px ;
+    /* z-index: -1; */
+}
+
+.ltr-effect:hover:after,.ltr-effect1:hover:after{
+    height:50%;
+    
+    color:white;
+    text-align: center;
+    font-size:1.6em;
+    border-bottom-right-radius:20px ;
+    border-bottom-left-radius:20px ;
+    padding-top: 50px;
+}
+.ltr-effect:hover:after{
+    content:"Netflix Clone";
+}
+.ltr-effect1:hover:after{
+    content:"Trello Clone"
 }

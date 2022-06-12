@@ -1,9 +1,11 @@
 // import React from 'react'
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import './Home.css'
 import BusinessMan from '../../icons/businessMan.png'
 import 'animate.css';
 import { useMousePosition } from "./useMouse";
+import me from '../../pictures/me.jpg'
 import desktop from '../../pictures/desktop.png'
 import desktopScreen from '../../pictures/desktopScreen.png'
 import desktopTable from '../../pictures/desktopTable.png'
@@ -11,6 +13,8 @@ import dashboard1 from '../../pictures/dashboard1.png'
 import dashboard2 from '../../pictures/dashboard2.png'
 import dashboard3 from '../../pictures/dashboard3.png'
 import dashboard4 from '../../pictures/dashboard4.png'
+import demo1 from '../../videos/demo1.mp4'
+import demo2 from '../../videos/demo2.mp4'
 
 function Home({style}){
 
@@ -152,11 +156,11 @@ function Home({style}){
                         </div>
                       </div>
                       
-
+                    <Link to="/portfolio">
                       <div className="seeworkContainer mt-5 position-relative">
                         <div className='seeworkTitle position-absolute'>SEE MY WORKS</div>
-                        <div className="seeworkButton rounded-circle position-absolute"></div>
                       </div>
+                    </Link>
                     </div>
                 </div>
                 <div className="col-md-6">
@@ -189,6 +193,114 @@ function Home({style}){
           
         </div>
         
+        </section>
+
+
+        {/*Read Me */}
+        <section className='mt-5 py-5'>
+          <div className='row'>
+            <div className="col-md-4"></div>
+
+            <div className='col-md-6'>
+              
+              <div className="aboutme py-5 px-3">
+                <div className="d-flex py-5">
+                  <div>
+                    <img className="roundedImg" src={me} alt="me" width="400px" height="600px"/>
+                  </div>
+
+                  <div className="ps-3 lh-base">
+                    <i className="fa-solid fa-microscope fs-3 "></i> <span className='ms-3 fs-6'>Building My own product</span><br/>
+                    <i className="fa-solid fa-seedling fs-3"></i><span className='ms-4 fs-6'>Learning blockchain</span><br/>
+                    <i className="fa-solid fa-futbol fs-3"></i><span className='ms-4 fs-6'>Big Football Fan</span><br/>
+                    <i className="fa-solid fa-gamepad fs-3"></i><span className='ms-3 fs-6'>Video Games Buffer</span><br/>
+                    <i className="fa-solid fa-microscope fs-3 "></i> <span className='ms-3 fs-6'>Always learning</span><br/>
+                  </div>
+                </div>
+                <div className="fs-4 mt-5">READ ME</div>
+                <div className='d-flex align-items-center mt-2'>
+                  <div className="round">
+                  </div>
+                  <div className="rounded-line">
+                  </div>
+                </div>
+                <div className="mt-5 ">
+                  <p>
+                      I am a full stack developer with a passion for thoughtful UI design. and blockchain aspects
+                  </p>
+                 <p className="lh-lg">I am Besides participating in many tech programs where I have been trained to have both technical and soft skills, I have acquired decent level programming knowledge from taking online courses on Udemy, Pluralsight, bagging a Node.js certificate </p>
+                 <p className="lh-lg">
+                     When I am not coding, I am either playing football, playing video games or playing some snnoker frames with my friends. Other times I am reading or learning a new language or framework. 
+                 </p>
+                </div>
+              </div>
+              
+              
+            </div>
+
+            <div className='col-md-2'>
+            </div>
+
+          </div>
+        </section>
+
+        {/*My Works */}
+
+        <section>
+          <div className='container'>
+
+          <div className='myworks'>
+            <h2 className="fs-1"> <b>My Works</b></h2>
+            <div className="fs-4 mt-3">Some of my projects</div>
+            <div className='d-flex align-items-center mt-2'>
+              <div className="round">
+              </div>
+              <div className="rounded-line">
+              </div>
+            </div>
+
+            <div className="fs-2 mt-3">Web Applications</div>
+            
+              <div className="row">
+                <div className="col-md-6">
+                  <a href="https://zabelassal.github.io/NetflixHO/" target="_blank">
+                  <div className='videoContainer video1 ltr-effect'>
+                  <video src={demo1} type="video/mp4" width="100%" height="100%" className="video1 " autoPlay muted loop playInline ></video>
+                  </div>
+                  </a>
+                </div>
+
+                <div className="col-md-6">
+                  <a href="https://github.com/ZaBelassal/TestPizza" target="_blank">
+                  <div className='videoContainer video1 ltr-effect1'>
+                    <video src={demo2} type="video/mp4" width="100%" height="100%" className="video1" autoPlay muted loop playInline ></video>
+                  </div>
+                  </a>
+                </div>
+
+
+                <div className="col-md-6 my-4">
+                  <video src={demo1} type="video/mp4" width="100%" height="100%" className="video1" autoPlay muted loop playInline ></video>
+                </div>
+
+                <div className="col-md-6 my-4">
+                  <video src={demo1} type="video/mp4" width="100%" height="100%" className="video1" autoPlay muted loop playInline ></video>
+                </div>
+
+                <div className="col-md-6">
+                  <video src={demo1} type="video/mp4" width="100%" height="100%" className="video1" autoPlay muted loop playInline ></video>
+                </div>
+
+                <div className="col-md-6">
+                  <video src={demo1} type="video/mp4" width="100%" height="100%" className="video1" autoPlay muted loop playInline ></video>
+                </div>
+
+              </div>
+
+            
+          </div>
+
+          </div>
         </section>
        </div>      
     )

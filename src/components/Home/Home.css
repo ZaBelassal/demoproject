@@ -75,6 +75,10 @@
 .animationDelay{
     animation-delay: 3000ms;
 }
+
+.animate__animated.animate__zoomIn {
+    --animate-duration: 7s;
+  }
 .talk{
     background: #e45447;
     animation-delay:4000ms;
@@ -84,9 +88,8 @@
     width:80px !important;
     height: 80px !important;
     transition-property: transform;
-    transition-duration: 4s;
-    transition-delay: 2s;
-   
+    transition-duration:2s !important;
+    
 }
 .talk:hover{
     
@@ -107,7 +110,7 @@
     z-index: 99;
   }
   
-  .letterZ:hover ~ .cursor {
+  .ltrZ:hover ~ .cursor {
     transform: scale(6);
   }
   .round{
@@ -213,11 +216,11 @@
     position:relative;
 }
 
-.ltr-effect, .ltr-effect1{
+.ltr-effect, .ltr-effect1, .ltr-effect2,.ltr-effect3,.ltr-effecr-effect4{
     position:relative
 }
 
-.ltr-effect:after,.ltr-effect1:after{
+.ltr-effect:after,.ltr-effect1:after,.ltr-effect2:after,.ltr-effect3:after,.ltr-effect4:after{
     position:absolute;
     content: "";
     height:0;
@@ -232,7 +235,7 @@
     /* z-index: -1; */
 }
 
-.ltr-effect:hover:after,.ltr-effect1:hover:after{
+.ltr-effect:hover:after,.ltr-effect1:hover:after ,.ltr-effect2:hover:after , .ltr-effect3:hover:after , .ltr-effect4:hover:after{
     height:50%;
     
     color:white;
@@ -247,4 +250,13 @@
 }
 .ltr-effect1:hover:after{
     content:"Trello Clone"
+}
+.ltr-effect2:hover:after{
+    content:"Demo animation where the bubbles are everywhere"
+}
+.ltr-effect3:hover:after{
+    content:"Instgram Like simulation"
+}
+.ltr-effect4:hover:after{
+    content:"Fish and chips first steps"
 }

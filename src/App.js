@@ -67,13 +67,19 @@ function App() {
 
   return loader ? (
 
-    <ClimbingBoxLoader size={30} color={'#E45447'} loader={loader}/>
+    <div className="loader">
+      <ClimbingBoxLoader size={30} color={'#E45447'} loader={loader}/>
+    </div>
   ) 
     : (
     <div className="App" style={style1}>
       
       <div className='AppContainer' style={style}>
       <header className="alignImg">
+                <div className="letterZ">
+                    <div className="letterZ0">Z</div>
+                    <div className="letterZ1">Z</div>
+                </div>
             <div className='marginMail'>
                   <a className="bgchange text-decoration-none fs-4 p-2" href="mailto:zakariabelassal@gmail.com"><i className="fa-solid fa-envelope mx-2"></i>zakariabelassal@gmail.com</a>
                   

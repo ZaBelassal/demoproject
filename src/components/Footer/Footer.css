@@ -1,0 +1,57 @@
+.letterZ{
+    width:10px;
+  
+  }
+  .letterZ0,.letterZ1{
+    font-family: 'Updock', cursive;
+    position:relative;
+    font-size:3.7em;
+    color:#58595b;
+    
+  }
+  .letterZ0{
+    top:26px;
+    left:38px;
+  }
+  .letterZ1{
+    top:-60px;
+    left:45px;
+  }
+  .dflex{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .first-div{
+    height:10px;
+    width:300px;
+    background-color: #e65446;
+    margin-left:150px;
+  }
+  .second-div{
+    position:relative;
+    top:-17px;
+    height:10px;
+    width:450px;
+    background-color: #E29D51;
+    margin-left:450px;
+    display:inline-block;
+  }
+  .third-div{
+    position:relative;
+    top:-42px;
+    height:10px;
+    width:300px;
+    background-color: #d8c7b8;
+    margin-left:900px;
+    display:inline-block;
+  }
+  .forth-div{
+    width:350px;
+    position:relative;
+    background-color:#607393;
+    height:10px;
+    display:inline-block;
+    top:-41px;
+  } 

@@ -14,7 +14,10 @@ import dashboard2 from '../../pictures/dashboard2.png'
 import dashboard3 from '../../pictures/dashboard3.png'
 import dashboard4 from '../../pictures/dashboard4.png'
 import demo1 from '../../videos/demo1.mp4'
-import demo2 from '../../videos/demo2.mp4'
+import demo2 from '../../videos/demo2.mkv'
+import demo3 from '../../videos/demo3.mkv'
+import demo4 from '../../videos/demo4.mkv'
+import demo5 from '../../videos/demo5.mkv'
 
 function Home({style}){
 
@@ -77,7 +80,7 @@ function Home({style}){
                     <div className="arrow-down"></div>
                   </div>
                     <h2 className='mt-4 name'><b>
-                            <span className='letterZ animate__animated animate__zoomIn delay1'>Z</span>
+                            <span className='ltrZ animate__animated animate__zoomIn delay1'>Z</span>
                             {/* <div className="cursor" style={{left: position.x + "px",top: position.y + "px"}}></div> */}
                             <span className='animate__animated animate__zoomIn delay2'>a</span>
                             <span className='animate__animated animate__zoomIn delay3'>k</span>
@@ -109,8 +112,9 @@ function Home({style}){
                 <div className="col-md-8 my-5 py-5 justify-content-start">
                     <img src={BusinessMan} alt="businessMan" height="500px" width="850px" style={{position:"absolute",zIndex:2}}/> 
                 </div>
-
-                <div className="talk animate__animated animate__zoomIn py-3 mb-5"> Let's talk</div>
+                <div className="animate__animated animate__zoomIn">
+                    <div className="talk pt-4 mb-5 text-white"> Let's talk</div>
+                </div>
               </div>
               {/*cursor */}
               <div className="cursor overflow-hidden" style={{left: position.x + "px",top: position.y + "px"}}></div>
@@ -261,7 +265,7 @@ function Home({style}){
 
             <div className="fs-2 mt-3">Web Applications</div>
             
-              <div className="row">
+              <div className="row pb-5">
                 <div className="col-md-6">
                   <a href="https://zabelassal.github.io/NetflixHO/" target="_blank">
                   <div className='videoContainer video1 ltr-effect'>
@@ -271,7 +275,7 @@ function Home({style}){
                 </div>
 
                 <div className="col-md-6">
-                  <a href="https://github.com/ZaBelassal/TestPizza" target="_blank">
+                  <a href="https://zabelassal.github.io/TestPizza/" target="_blank">
                   <div className='videoContainer video1 ltr-effect1'>
                     <video src={demo2} type="video/mp4" width="100%" height="100%" className="video1" autoPlay muted loop playInline ></video>
                   </div>
@@ -280,15 +284,27 @@ function Home({style}){
 
 
                 <div className="col-md-6 my-4">
-                  <video src={demo1} type="video/mp4" width="100%" height="100%" className="video1" autoPlay muted loop playInline ></video>
+                  <a href="https://zabelassal.github.io/NetflixHO/" target="_blank">
+                  <div className='videoContainer video1 ltr-effect2'>
+                  <video src={demo3} type="video/mp4" width="100%" height="100%" className="video1" autoPlay muted loop playInline ></video>
+                  </div>
+                  </a>
                 </div>
 
                 <div className="col-md-6 my-4">
-                  <video src={demo1} type="video/mp4" width="100%" height="100%" className="video1" autoPlay muted loop playInline ></video>
+                <a href="https://zabelassal.github.io/instagram/" target="_blank">
+                  <div className='videoContainer video1 ltr-effect3'>
+                  <video src={demo4} type="video/mp4" width="100%" height="100%" className="video1" autoPlay muted loop playInline ></video>
+                  </div>
+                  </a>
                 </div>
 
                 <div className="col-md-6">
-                  <video src={demo1} type="video/mp4" width="100%" height="100%" className="video1" autoPlay muted loop playInline ></video>
+                <a href="https://zabelassal.github.io/FishAndChips/" target="_blank">
+                  <div className='videoContainer video1 ltr-effect4'>
+                  <video src={demo5} type="video/mp4" width="100%" height="100%" className="video1" autoPlay muted loop playInline ></video>
+                  </div>
+                  </a>
                 </div>
 
                 <div className="col-md-6">
@@ -296,8 +312,14 @@ function Home({style}){
                 </div>
 
               </div>
-
-            
+                        <p className="text-center pt-5 fs-2 ms-5 ps-5">Stay Connected</p>
+                        <p className="text-center fs-5 text-muted ms-5 ps-5">Casablanca , Morocco</p>
+                        <p className="text-center pb-2 fs-2">
+                          <div className='marginMail'>
+                              <a className="bgchange text-decoration-none fs-4 me-5 py-2 pe-3" href="mailto:zakariabelassal@gmail.com"><i className="fa-solid fa-envelope mx-2"></i>zakariabelassal@gmail.com</a>
+                          </div>
+                        </p>
+                        <p className="text-center ms-5"><a href="https://www.instagram.com/zakariabelassal5/" className='text-secondary'><i className="fa-brands fa-telegram ms-5 me-3 fs-3"></i></a><i className="fa-brands fa-instagram fs-3"></i></p>
           </div>
 
           </div>

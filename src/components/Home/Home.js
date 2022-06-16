@@ -1,6 +1,6 @@
 // import React from 'react'
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Home.css'
 import BusinessMan from '../../icons/businessMan.png'
 import 'animate.css';
@@ -18,10 +18,18 @@ import demo2 from '../../videos/demo2.mkv'
 import demo3 from '../../videos/demo3.mkv'
 import demo4 from '../../videos/demo4.mkv'
 import demo5 from '../../videos/demo5.mkv'
+import 'animation.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Home({style}){
 
   const position = useMousePosition();
+
+  useEffect(()=>{
+    AOS.init({duration:2000})
+    AOS.refresh();
+  },[])
 
         // console.log(mode)
   // }
@@ -169,27 +177,36 @@ function Home({style}){
                 </div>
                 <div className="col-md-6">
                   <div className="position-relative">
-                    <div>
-                    <img src={dashboard1} alt="dashboard1" width='500px' height='500px' className='dashboard1 position-absolute'/>
+                  <div>
+     {/* 1er*/}        <img src={desktop} alt="desktop" width='500px' height='500px' className="desktop position-absolute" data-aos="zoom-in" />
                     </div>
+                    
                     <div>
-                    <img src={dashboard2} alt="dashboard2" width='500px' height='500px' className='dashboard2 position-absolute'/>
+                    <img src={dashboard1} alt="dashboard1" width='500px' height='500px' className='dashboard1 position-absolute' data-aos="fade-right"/>
                     </div>
+
                     <div>
-                    <img src={dashboard3} alt="dashboard3" width='500px' height='500px' className='dashboard3 position-absolute'/>
+                    <img src={dashboard2} alt="dashboard2" width='500px' height='500px' className='dashboard2 position-absolute' data-aos="fade-left"/>
                     </div>
+
                     <div>
-                    <img src={dashboard4} alt="dashboard4" width='500px' height='500px' className='dashboard4 position-absolute'/>
+                    <img src={dashboard3} alt="dashboard3" width='500px' height='500px' className='dashboard3 position-absolute' data-aos="fade-right"/>
                     </div>
+
                     <div>
-                    <img src={desktopScreen} alt="desktopScreen"  width='500px' height='500px' className='desktopScreen position-absolute'/>
+                    <img src={dashboard4} alt="dashboard4" width='500px' height='500px' className='dashboard4 position-absolute' data-aos="fade-left"/>
                     </div>
+
                     <div>
-                    <img src={desktopTable} alt="desktopTable" width='500px' height='500px' className='desktopTable position-absolute'/>
+                    <img src={desktopScreen} alt="desktopScreen"  width='500px' height='500px' className='desktopScreen position-absolute' data-aos="fade-down"/>
                     </div>
+                    
                     <div>
-                        <img src={desktop} alt="desktop" width='500px' height='500px' className="desktop position-absolute"/>
+    {/* 2eme*/}        <img src={desktopTable} alt="desktopTable" width='500px' height='500px' className='desktopTable position-absolute' data-aos="fade-down"/>
                     </div>
+
+                    
+
                   </div>
                 </div>
               </div>

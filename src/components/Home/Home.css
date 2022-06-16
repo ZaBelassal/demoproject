@@ -131,12 +131,15 @@
 
 .desktop{
     top:150px;
+    z-index: 50;
+    /* animation-delay: 900ms; */
 }
 .desktopScreen{
     top: -70px;
 }
 .desktopTable{
     top:140px;
+    z-index: 40;
 }
 .dashboard1{
  top:-130px;

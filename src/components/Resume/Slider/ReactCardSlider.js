@@ -32,7 +32,7 @@ const ReactCardSlider=(props) =>{
     }
     const slideRight = () => {
         var slider = document.querySelector('.slider');
-        slider.scrollRight = slider.scrollRight-500;
+        slider.scrollLeft = slider.scrollLeft-500;
     }
 
   return (

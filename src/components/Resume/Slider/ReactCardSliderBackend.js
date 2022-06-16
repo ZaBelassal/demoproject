@@ -25,7 +25,7 @@ const ReactCardSliderBackend=(props) =>{
     }
     const slideRight = () => {
         var slider1 = document.getElementById('slider1');
-        slider1.scrollRight = slider1.scrollRight-500;
+        slider1.scrollLeft = slider1.scrollLeft-500;
     }
 
   return (

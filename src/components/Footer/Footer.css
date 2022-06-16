@@ -27,15 +27,15 @@
     height:10px;
     width:300px;
     background-color: #e65446;
-    margin-left:150px;
+    /* margin-left:30px; */
   }
   .second-div{
     position:relative;
     top:-17px;
     height:10px;
-    width:450px;
+    width:330px;
     background-color: #E29D51;
-    margin-left:450px;
+    margin-left:300px;
     display:inline-block;
   }
   .third-div{
@@ -44,7 +44,7 @@
     height:10px;
     width:300px;
     background-color: #d8c7b8;
-    margin-left:900px;
+    margin-left:630px;
     display:inline-block;
   }
   .forth-div{

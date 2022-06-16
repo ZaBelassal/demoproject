@@ -11,7 +11,7 @@ const ReactCardSliderManage=(props) =>{
         {src:githubLogo,title:'Github'},
         {src:gitLogo,title:'GIT'},
         {src:npmLogo,title:'NPM'},
-        {src:postmanLogo,title:'postmanLogo'}
+        {src:postmanLogo,title:'postman'}
     ]
 
     const slideLeft = () => {
@@ -20,7 +20,7 @@ const ReactCardSliderManage=(props) =>{
     }
     const slideRight = () => {
         var slider2 = document.querySelector('.slider2');
-        slider2.scrollRight = slider2.scrollRight-500;
+        slider2.scrollLeft = slider2.scrollLeftt-500;
     }
 
   return (

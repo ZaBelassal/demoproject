@@ -110,7 +110,7 @@
     z-index: 99;
   }
   
-  .ltrZ:hover ~ .cursor {
+  .ltrZ:hover~.cursor {
     transform: scale(6);
   }
   .round{

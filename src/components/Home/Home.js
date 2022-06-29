@@ -227,7 +227,7 @@ function Home({style}){
               <div className="aboutme py-5 px-3">
                 <div className="d-flex py-5">
                   <div>
-                    <img className="roundedImg" src={me} alt="me" width="400px" height="600px"/>
+                    <img className="roundedImg" src={me} alt="me" width="400px" height="300px"/>
                   </div>
 
                   <div className="ps-3 lh-base">

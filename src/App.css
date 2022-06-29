@@ -6,6 +6,7 @@
 .App{
   background-color: #F2F0EE;
   padding-top: 80px;
+  
 }
 
 .AppContainer{
@@ -21,7 +22,7 @@
     display:flex;
     align-items:center;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 10px;
     padding-left:40px;
     padding-right: 50px;
 }
@@ -42,4 +43,30 @@
     box-shadow: 0 1rem 2rem rgb(43 41 41 / 40%);
         transform: rotate(-30deg) !important;
         /* cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto; */
+}
+.letterZ{
+  width:10px;
+
+}
+.letterZ0,.letterZ1{
+  font-family: 'Updock', cursive;
+  position:relative;
+  font-size:3.7em;
+  color:#58595b;
+  
+}
+.letterZ0{
+  top:26px;
+  left:38px;
+}
+.letterZ1{
+  top:-60px;
+  left:45px;
+}
+
+.loader{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
 }

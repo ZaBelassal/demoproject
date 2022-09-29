@@ -75,8 +75,28 @@
 .animationDelay{
     animation-delay: 3000ms;
 }
-/*My name*/
 
+.animate__animated.animate__zoomIn {
+    --animate-duration: 7s;
+  }
+.talk{
+    background: #e45447;
+    animation-delay:4000ms;
+    text-align: center;
+    margin-left:270px;
+    border-radius:50%;
+    width:80px !important;
+    height: 80px !important;
+    transition-property: transform;
+    transition-duration:2s !important;
+    
+}
+.talk:hover{
+    
+    transform:scale(2);
+    cursor:pointer
+/*My name*/
+}
 .cursor {
     position: relative;
     width: 100px;
@@ -90,7 +110,156 @@
     z-index: 99;
   }
   
-  .letterZ:hover ~ .cursor {
+  .ltrZ:hover~.cursor {
     transform: scale(6);
   }
-  
+  .round{
+    border-radius:50%;
+    background-color: #e45447;
+    height:15px;
+    width:15px;
+  }
+  .rounded-line{
+      height: 4px;
+      width:180px;
+      background-color:#e45447;
+  }
+  .services-details{
+      background-color: #f2f0ee;
+      /* margin-left:200px; */
+  }
+
+.desktop{
+    top:150px;
+    z-index: 50;
+    /* animation-delay: 900ms; */
+}
+.desktopScreen{
+    top: -70px;
+}
+.desktopTable{
+    top:140px;
+    z-index: 40;
+}
+.dashboard1{
+ top:-130px;
+ left:-130px;
+ z-index: 2;
+}
+.dashboard2{
+    top:-100px ;
+    right:-60px;
+    z-index: 2;
+}
+
+.dashboard3{
+    top:-10px;
+    left:-130px;
+    z-index: 2; 
+}
+
+.dashboard4{
+    top:-10px;
+    right:-60px;
+    z-index: 2;
+}
+
+.seeworkTitle{
+    
+    top:25px;
+    width:200px;
+    font-size:20px;
+}
+.seeworkContainer{
+    margin-left:20px;
+    background-color: #e45447;
+    color:#2b2929;
+    border-radius: 50%;
+    height:80px;
+    width:80px;
+    text-align:center;
+    left:50px;
+    transition-property:all;
+    transition-duration: 0.4s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.seeworkContainer:hover{
+    background-color: #e45447;
+    width:200px;
+    height:80px;
+    border-radius:40px;
+    color:white;
+    cursor: pointer
+}
+
+
+/*About Me*/
+
+.aboutme{
+    background-color:#F2F0EE;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.roundedImg{
+    border-radius: 8px;
+}
+
+/*My works */
+
+.myworks{
+    margin-left: 100px;
+}
+
+.videoContainer{
+    position:relative;
+}
+.video1{
+    border-radius: 20px;
+    position:relative;
+}
+
+.ltr-effect, .ltr-effect1, .ltr-effect2,.ltr-effect3,.ltr-effecr-effect4{
+    position:relative
+}
+
+.ltr-effect:after,.ltr-effect1:after,.ltr-effect2:after,.ltr-effect3:after,.ltr-effect4:after{
+    position:absolute;
+    content: "";
+    height:0;
+    
+    right:0;
+    bottom:0;
+    left:0;
+    background-color: #e45447;
+    transition:all 0.5s ease-in-out;
+    border-bottom-right-radius:20px ;
+    border-bottom-left-radius:20px ;
+    /* z-index: -1; */
+}
+
+.ltr-effect:hover:after,.ltr-effect1:hover:after ,.ltr-effect2:hover:after , .ltr-effect3:hover:after , .ltr-effect4:hover:after{
+    height:50%;
+    
+    color:white;
+    text-align: center;
+    font-size:1.6em;
+    border-bottom-right-radius:20px ;
+    border-bottom-left-radius:20px ;
+    padding-top: 50px;
+}
+.ltr-effect:hover:after{
+    content:"Netflix Clone";
+}
+.ltr-effect1:hover:after{
+    content:"Trello Clone"
+}
+.ltr-effect2:hover:after{
+    content:"Demo animation where the bubbles are everywhere"
+}
+.ltr-effect3:hover:after{
+    content:"Instgram Like simulation"
+}
+.ltr-effect4:hover:after{
+    content:"Fish and chips first steps"
+}

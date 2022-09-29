@@ -1,0 +1,21 @@
+.techIuse {
+    margin-left:200px;
+}
+.round{
+    border-radius:50%;
+    background-color: #e45447;
+    height:15px;
+    width:15px;
+  }
+  .rounded-line{
+      height: 4px;
+      width:180px;
+      background-color:#e45447;
+  }
+  .bodyCardsSlider{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center; 
+  }

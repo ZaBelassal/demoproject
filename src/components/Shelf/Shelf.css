@@ -1,0 +1,28 @@
+.round{
+    border-radius:50%;
+    background-color: #e45447;
+    height:15px;
+    width:15px;
+  }
+  .rounded-line{
+      height: 4px;
+      width:180px;
+      background-color:#e45447;
+  }
+  .container-Shelf{
+    margin-left:210px;
+  }
+  .cards{
+    margin-left: 150px;
+  }
+  .item{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    transition-property : transform;
+    transition-duration: 300ms; 
+    /*transition-delay: 500ms; */
+    transition-timing-function: ease-in-out;
+  }
+  .item:hover{
+    transform:translateY(-10px) ;
+  }

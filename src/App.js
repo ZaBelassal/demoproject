@@ -77,8 +77,10 @@ function App() {
       <div className='AppContainer' style={style}>
       <header className="alignImg">
                 <div className="letterZ">
+                  <Link to="/" className="text-decoration-none">
                     <div className="letterZ0">Z</div>
                     <div className="letterZ1">Z</div>
+                  </Link>
                 </div>
             <div className='marginMail'>
                   <a className="bgchange text-decoration-none fs-4 p-2" href="mailto:zakariabelassal@gmail.com"><i className="fa-solid fa-envelope mx-2"></i>zakariabelassal@gmail.com</a>
